@@ -1,0 +1,188 @@
+/* ---First Layout responsive ---- */
+@media screen and (max-width: 900px) {
+
+    /* ===== Hero section styling === */
+    .hero_section {
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero_section .f_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero_section .s_content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ======= About section Styling ===== */
+    .about_section {
+        flex-wrap: wrap;
+    }
+
+    .about_section .about_profile_content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_section .about_text_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_profile_content .back-pic {
+        max-width: 80%;
+    }
+
+    .back-pic .animated-coder {
+        bottom: -2rem;
+        right: 0;
+        width: 140px;
+        height: 140px;
+    }
+
+    .text img {
+        width: 130px;
+    }
+
+
+    /* ===== Project Section Styling ==== */
+    .all_projects .project {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .project .project_image {
+        width: 100%;
+    }
+
+    .project .project_info {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+    /* ======= Skills styling -==== */
+    .skills_section .all_skills_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ==== Contact Styling */
+    .contact_section {
+        flex-direction: column;
+    }
+
+    .contact_section .contact_content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact_section form {
+        width: 100%;
+    }
+
+}
+
+/* ---Second Mobile Layout responsive ---- */
+@media screen and (max-width: 600px) {
+
+    /* ========= Header Styling =====  */
+    header nav .hamburger {
+        display: flex;
+    }
+
+    header nav ul {
+        position: absolute;
+        left: 0;
+        top: 120%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 30px;
+        width: 100%;
+        min-height: 50%;
+        backdrop-filter: blur(5px);
+        background-color: rgba(40, 40, 40, 0.884);
+        border: 1px solid rgba(89, 81, 56, 0.333);
+        /* border-top: 4px solid orange; */
+        border-top: 4px solid rgb(7, 169, 239);
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+        transition: all 0.4s;
+        visibility: hidden;
+        opacity: 0;
+        scale: 0;
+    }
+
+    header nav.active ul {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        scale: 1;
+    }
+
+    /* ======= Hero Section ====== */
+    .s_content .profile_img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* ===== About Section Styling ==== */
+    .about_profile_content .back-pic {
+        max-width: 100%;
+    }
+
+    /* ===== Project Section ==== */
+    .all_projects .project {
+        margin: 5vh 0;
+
+    }
+
+    /* ======= Skills styling -==== */
+    .skills_section {
+        margin: 5vh 0;
+    }
+
+    .skills_section .all_skills_container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ---- Contact Styling */
+    form .first_input {
+        flex-direction: column;
+    }
+
+    /* ---- Footer */
+    .footer {
+        background-color: rgba(37, 37, 37, 0);
+    }
+
+    .footer .text p {
+        font-size: 17px;
+    }
+
+}
+
+/* ---Third Layout responsive ---- */
+@media screen and (max-width: 400px) {
+    .s_content .profile_img {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* ---footer */
+    .footer .text p {
+        font-size: 15px;
+    }
+}
