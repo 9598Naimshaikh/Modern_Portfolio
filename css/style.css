@@ -560,13 +560,14 @@ header nav.active .hamburger span:nth-child(3) {
     gap: 8px;
     border: 1px solid rgb(127, 5, 227);
     box-shadow: 0.1px 0.1px 500px rgba(130, 10, 227, 0.313);
-
+    overflow: hidden;
 }
 form .first_input{
+    width: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
-    width: 100%;
     
 }
 form .first_input .name, .email{
